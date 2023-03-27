@@ -31,7 +31,7 @@ void Automata::getMenu() {
     prices = { 50, 30, 40 };
     std::cout << "Menu:\n";
     for (size_t i = 0; i < menu.size(); ++i) {
-        std::cout <<i+1<<". "<< menu[i] <<" - "<< prices[i] << " rubles\n";
+        std::cout << i+1 << "." << menu[i] << " - " << prices[i] << "rubles\n";
     }
 }
 
