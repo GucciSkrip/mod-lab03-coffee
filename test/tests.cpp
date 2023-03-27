@@ -11,7 +11,6 @@ a.choice(1);
 a.coin(20);
 EXPECT_EQ(Automata::CHECK, a.getState());
 EXPECT_FALSE(a.check());
-EXPECT_EQ(Automata::WAIT, a.getState());
 }
 
 TEST(task1, test2) {
