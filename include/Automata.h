@@ -12,13 +12,14 @@ class Automata {
     void off();
     void coin(int coin);
     void getMenu();
+    enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
+    STATES state;
     STATES getState();
     void choice(int item);
     bool check();
     void cancel();
     void cook();
     void finish();
-    enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
  private:
     int cash;
     std::vector<std::string> menu;
