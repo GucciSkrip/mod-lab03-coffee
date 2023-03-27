@@ -5,8 +5,6 @@
 #include <string>
 #include <vector>
 
-enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
-
 class Automata {
  public:
     Automata();
@@ -20,6 +18,7 @@ class Automata {
     void cancel();
     void cook();
     void finish();
+    enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
  private:
     int cash;
     std::vector<std::string> menu;
