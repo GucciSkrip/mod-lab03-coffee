@@ -31,7 +31,7 @@ void Automata::getMenu() {
     prices = { 50, 30, 40 };
     std::cout << "Menu:\n";
     for (size_t i = 0; i < menu.size(); ++i) {
-        std::cout << i + 1 << ". " << menu[i] << " - " << prices[i] << " rubles\n";
+        std::cout <<i+1<<". "<< menu[i] <<" - "<< prices[i] << " rubles\n";
     }
 }
 
@@ -52,11 +52,10 @@ bool Automata::check() {
         if (cash < prices[current_]) {
             std::cout << "Not enough money on the account\n";
             return false;
-        }
-        else {
+        } else {
             state = COOK;
             return true;
-        }
+          }
     }
     return false;
 }
