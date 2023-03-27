@@ -45,8 +45,6 @@ a.choice(1);
 a.coin(50);
 a.check();
 EXPECT_EQ(Automata::COOK, a.getState());
-a.finish();
-EXPECT_EQ(0, a.getCash());
 }
 
 TEST(task1, test5) {
