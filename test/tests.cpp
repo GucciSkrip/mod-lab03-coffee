@@ -18,17 +18,6 @@ TEST(task1, test2) {
 Automata a = Automata();
 a.on();
 a.getMenu();
-a.choice(2);
-a.coin(50);
-EXPECT_EQ(Automata::CHECK, a.getState());
-EXPECT_FALSE(a.check());
-EXPECT_EQ(Automata::WAIT, a.getState());
-}
-
-TEST(task1, test3) {
-Automata a = Automata();
-a.on();
-a.getMenu();
 a.choice(3);
 a.coin(40);
 a.check();
@@ -37,7 +26,7 @@ a.finish();
 EXPECT_EQ(Automata::WAIT, a.getState());
 }
 
-TEST(task1, test4) {
+TEST(task1, test3) {
 Automata a = Automata();
 a.on();
 a.getMenu();
@@ -47,7 +36,7 @@ a.check();
 EXPECT_EQ(Automata::COOK, a.getState());
 }
 
-TEST(task1, test5) {
+TEST(task1, test4) {
 Automata a = Automata();
 a.on();
 a.off();

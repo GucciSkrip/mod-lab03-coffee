@@ -5,17 +5,13 @@
 Automata::Automata() : cash(0), state(OFF), choice_(0), current_(0) {}
 
 void Automata::on() {
-    if (state == OFF) {
-        state = WAIT;
-        std::cout << "The automata is on and waiting for your order\n";
-    }
+    state = WAIT;
+    std::cout << "The automata is on and waiting for your order\n";
 }
 
 void Automata::off() {
-    if (state == WAIT) {
-        state = OFF;
-        std::cout << "The automata is turned off\n";
-    }
+    state = OFF;
+    std::cout << "The automata is turned off\n";
 }
 
 void Automata::coin(int coin) {
