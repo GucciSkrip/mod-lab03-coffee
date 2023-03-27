@@ -35,7 +35,7 @@ void Automata::getMenu() {
     }
 }
 
-Automate::STATES Automata::getState() {
+Automata::STATES Automata::getState() {
     return state;
 }
 
